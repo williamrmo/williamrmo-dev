@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: $color-lightgrey;
+    display: grid;
+    grid-template: 100px 1fr 100px / 10% 80% 10%;
+    grid-template-areas: "header header header" 
+                         ". article ." 
+                         "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+
+article {
+    grid-area: article;
+    display: grid;
+    padding: $marge;
+    background: $color-white;
+    margin-top: $marge;
+}
+
+footer {
+    grid-area: footer;
+    background: $color-brand;
+    margin-top: $marge;
+}

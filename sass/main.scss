@@ -1,0 +1,15 @@
+// Librerías, Settings y Variables
+@import "lib/vars";
+
+//Layout
+@import "layout/layout";
+
+// Elementos Base
+@import "base/tipografias";
+
+// Componentes
+@import "components/header";
+@import "components/hero";
+@import "components/skills";
+@import "components/modal";
+@import "components/footer";

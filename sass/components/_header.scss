@@ -1,0 +1,70 @@
+.header {
+    background-color: $color-brand;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+figure {
+    margin: 0;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit; 
+    padding: 0 10px; 
+    text-transform: uppercase;  
+}
+
+.menu {
+    height: inherit;
+  }
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.container {
+    max-width: 1000px;
+    width: 80%;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+.burguer-button {
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $color-brand-opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 4;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: none;
+}

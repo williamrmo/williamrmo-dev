@@ -1,0 +1,85 @@
+@media screen and (max-width: 1024px) {
+    .social-link {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-areas: "header header header" "article article article" "footer footer footer";
+    }
+    .banner {
+        padding: 0;
+    }
+    .burguer-button {
+        display: flex;
+    }
+    
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header ol {
+        display: initial;
+      }
+    .header ol li {
+        height: 50px;
+        text-align: center;
+      }
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+        text-decoration: none;
+    }
+    .header .logo {
+        text-align: center;
+      }
+    .menu {
+        position: fixed;
+        background: rgba(0, 123, 255, .8);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active {
+        left: 0;
+    }
+}
+ 
+@media screen and (max-width: 480px) {
+    .hero {
+        grid-template: 1fr 1fr / 100%;
+        grid-template-areas:  "pic" "about";
+    }
+    .image {
+        margin: auto;
+    }
+    .skills {
+        grid-template: 1fr 1fr 1fr 1fr / 100%;  
+        align-items: center;
+        justify-content: center;
+        grid-template-areas: "front" "back" "cert" "other";
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero {
+        grid-template: 1fr 1fr / 100%;
+        grid-template-areas:  "about" "about";
+    }
+    .image {
+        display: none;
+    }
+    .social-link {
+        font-size: 35px;
+    }
+}

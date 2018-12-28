@@ -1,0 +1,52 @@
+.hero {
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 500px / 1fr 389px;
+    grid-template-areas: "about pic";
+    justify-content: space-between;
+    grid-gap: $marge;
+}
+
+.image {
+    width: 389px;
+    object-fit: cover;
+    grid-area: pic;
+    overflow: hidden;
+    border-radius: $border;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.about {
+    grid-area: about;
+}
+.about p {
+    color: $color-black;
+}
+.banner {
+    grid-area: banner;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $marge;
+}
+.social-link {
+    color: $color-secundary;
+    display: inline-block;
+    font-size: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+.social-link:hover {
+    animation: big .3s ease forwards;
+}
+
+@keyframes big {
+    0% {
+        font-size: 50px;
+    }
+    100% {
+        font-size: 60px;
+    }
+}
