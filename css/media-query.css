@@ -57,11 +57,11 @@
  
 @media screen and (max-width: 480px) {
     .hero {
-        grid-template: 1fr 1fr / 100%;
+        grid-template: 1fr / 100%;
         grid-template-areas:  "pic" "about";
     }
     .image {
-        margin: auto;
+        display: none;
     }
     .skills {
         grid-template: 1fr 1fr 1fr 1fr / 100%;  
